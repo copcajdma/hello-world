@@ -56,4 +56,3 @@ steps:
       az container show --resource-group $(resourceGroup) --name $(containerName) --query "{FQDN:ipAddress.fqdn,ProvisioningState:provisioningState}" --out table
 
 
-
