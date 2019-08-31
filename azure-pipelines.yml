@@ -6,6 +6,12 @@
 trigger:
 - master
 
+variables:
+  resourceGroup:'microservices'
+  containerName:'testdocker-maven-5'
+  imageName:'devs4j/testdocker-maven-5'
+  dnsName: 'testdocker-maven-5-pipeline-hcopca'
+
 pool:
   vmImage: 'ubuntu-latest'
 
