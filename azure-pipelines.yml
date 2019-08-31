@@ -18,10 +18,6 @@ pool:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
-
- publishJUnitResults: true
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package'
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
